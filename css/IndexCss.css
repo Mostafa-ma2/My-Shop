@@ -1,0 +1,58 @@
+@font-face {
+    font-family: "name";
+    src: url(fonts/font_Medium.eot) format("eot"), url(fonts/font_Medium.ttf) format("truetype"), url(fonts/font_Medium.woff) format("woff");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "name";
+    direction: rtl;
+    background-color: #dcdcdca3;
+}
+
+.body {
+    background-color: #f1f1f1 !important;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #1a1f59;
+}
+
+a,
+a:hover {
+    transition: all 0.2s ease;
+    text-decoration: none !important;
+}
+
+
+/* ======================================================= Header Top ================================================== */
+
+header .header-top {
+    display: flex;
+}
+
+header .header-top .header-Logo img {
+    width: 100px;
+}
+
+header .header-top .header-login {
+    padding: 32px;
+    text-align: end;
+}
+
+header .header-top .header-login a {
+    padding: 7px;
+}
+
+header .header-top .header-login a:hover {
+    transition: all 0.7s cubic-bezier(0.1, 1.33, 0.46, 1.43);
+    border-bottom: 1px solid green;
+}
