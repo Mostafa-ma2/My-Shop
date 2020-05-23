@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/IndexCss.css">
 </head>
 
-<body>
+<body id="body">
     <header>
         <div class="header-top container">
             <div class="header-Logo col-md-6 col-sm-6">
@@ -31,10 +31,10 @@
                     </div>
                     <div class="List-name">
                         <i class="fa fa-list"></i>
-                        <a href="#">دسته بندی</a>
+                        <a id="OpenGroup" href="#">دسته بندی</a>
                         <div class="List-Group" style="display:none;">
-                            <div class="Group-item-action" attribute="item-1">
-                                <i class="fa fa-circle"></i>
+                            <div class="Group-item" attribute="item-1">
+                                <i class="fa fa-circle-o"></i>
                                 <a href="#">لپ تاپ</a>
                             </div>
                             <div class="Group-item" attribute="item-2">
@@ -53,7 +53,7 @@
                                 <i class="fa fa-circle-o"></i>
                                 <a href="#">لوازم جانبی</a>
                             </div>
-                            <div class="item-action" style="display:none;" attribute="item-1">
+                            <div class="item-1" style="display:none;">
                                 <p>مدل</p>
                                 <hr>
                                 <a href="#">
@@ -66,7 +66,7 @@
                                     apple
                                 </a>
                             </div>
-                            <div class="item" style="display:none;" attribute="item-2">
+                            <div class="item-2" style="display:none;">
                                 <p>مدل</p>
                                 <hr>
                                 <a href="#">
@@ -98,11 +98,11 @@
                 </div>
                 <div class="navbar-serch col-md-3 c0l-sm-3">
                     <div class="Serch-Input">
-                        <input type="text">
+                        <input id="Serch-Input" type="text">
                         <div class="icon-input">
                             <i class="fa fa-search"></i>
                         </div>
-                        <div class="text-input">
+                        <div id="Serch-text" class="text-input" style="display:block;">
                             <p>جستو جو</p>
                         </div>
                     </div>

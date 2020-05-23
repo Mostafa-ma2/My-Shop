@@ -126,6 +126,7 @@
      display: grid;
      right: 100px;
      background: white;
+     top: 0;
      padding: 9px;
      border-radius: 8px;
  }
