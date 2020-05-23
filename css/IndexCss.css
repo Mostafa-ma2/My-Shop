@@ -1,58 +1,168 @@
-@font-face {
-    font-family: "name";
-    src: url(fonts/font_Medium.eot) format("eot"), url(fonts/font_Medium.ttf) format("truetype"), url(fonts/font_Medium.woff) format("woff");
-}
-
-* {
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    font-family: "name";
-    direction: rtl;
-    background-color: #dcdcdca3;
-}
-
-.body {
-    background-color: #f1f1f1 !important;
-}
-
-li {
-    list-style: none;
-}
-
-a {
-    color: #1a1f59;
-}
-
-a,
-a:hover {
-    transition: all 0.2s ease;
-    text-decoration: none !important;
-}
-
-
-/* ======================================================= Header Top ================================================== */
-
-header .header-top {
-    display: flex;
-}
-
-header .header-top .header-Logo img {
-    width: 100px;
-}
-
-header .header-top .header-login {
-    padding: 32px;
-    text-align: end;
-}
-
-header .header-top .header-login a {
-    padding: 7px;
-}
-
-header .header-top .header-login a:hover {
-    transition: all 0.7s cubic-bezier(0.1, 1.33, 0.46, 1.43);
-    border-bottom: 1px solid green;
-}
+ @font-face {
+     font-family: "name";
+     src: url(fonts/font_Medium.eot) format("eot"), url(fonts/font_Medium.ttf) format("truetype"), url(fonts/font_Medium.woff) format("woff");
+ }
+ 
+ * {
+     padding: 0;
+     margin: 0;
+ }
+ 
+ body {
+     font-family: "name";
+     direction: rtl;
+     background-color: #dcdcdca3;
+ }
+ 
+ .body {
+     background-color: #f1f1f1 !important;
+ }
+ 
+ li {
+     list-style: none;
+ }
+ 
+ a {
+     color: #1a1f59;
+ }
+ 
+ a,
+ a:hover {
+     transition: all 0.2s ease;
+     text-decoration: none !important;
+ }
+ /* ======================================================= Header Top ================================================== */
+ 
+ header .header-top {
+     display: flex;
+ }
+ 
+ header .header-top .header-Logo img {
+     width: 100px;
+ }
+ 
+ header .header-top .header-login {
+     padding: 32px;
+     text-align: end;
+ }
+ 
+ header .header-top .header-login a {
+     padding: 7px;
+ }
+ 
+ header .header-top .header-login a:hover {
+     transition: all 0.7s cubic-bezier(0.1, 1.33, 0.46, 1.43);
+     border-bottom: 1px solid green;
+ }
+ /* ======================================================= Header Main */
+ 
+ header .header-main {
+     background: #8686f7;
+     padding: 2px;
+ }
+ 
+ header .header-main .main-List {
+     display: flex;
+     cursor: context-menu;
+ }
+ 
+ header .header-main .main-List .List-name {
+     margin-left: 20px;
+     display: inline-block;
+     height: 27px;
+     margin-top: 11px;
+ }
+ 
+ header .header-main .main-List .List-name:hover {
+     border-bottom: 2px solid coral;
+     border-radius: 4px;
+ }
+ 
+ header .header-main .main-List .List-name .List-Group {
+     display: grid;
+     position: absolute;
+     margin-top: 17px;
+     background-color: white;
+     padding: 4px;
+     border-radius: 4px;
+     border-bottom: 2px solid coral;
+ }
+ 
+ header .header-main .main-List .List-name .List-Group .Group-item {
+     padding: 8px;
+ }
+ 
+ header .header-main .main-List .List-name .List-Group .Group-item-action {
+     padding: 8px;
+     background: #8686f7;
+     border-radius: 7px;
+ }
+ 
+ header .header-main .main-List .List-name .List-Group .Group-item:hover {
+     padding: 8px;
+     background: #8686f7;
+     border-radius: 7px;
+     transition: all 0.9s cubic-bezier(0.29, 0.42, 0, 1.13);
+ }
+ 
+ header .header-main .main-List .List-name .List-Group .Group-item:hover a {
+     color: ghostwhite;
+ }
+ 
+ header .header-main .main-List .List-name .List-Group .Group-item-action i {
+     color: gold;
+ }
+ 
+ header .header-main .main-List .List-name .List-Group .Group-item-action a {
+     color: ghostwhite;
+ }
+ 
+ header .header-main .main-List .List-name .List-Group .item {
+     display: none;
+ }
+ 
+ header .header-main .main-List .List-name .List-Group .item-action {
+     position: absolute;
+     display: grid;
+     right: 100px;
+     background: white;
+     padding: 9px;
+     border-radius: 8px;
+ }
+ 
+ header .header-main .main-List .List-name .List-Group .item-action a {
+     padding: 6px;
+ }
+ 
+ header .header-main .main-List .List-name .List-Group .item-action a:hover {
+     border-bottom: 2px solid gold;
+ }
+ 
+ header .header-main .main-List .List-name .List-Group .item-action p {
+     text-align: center;
+ }
+ 
+ header .header-main .navbar-serch input {
+     width: 100%;
+     margin-top: 9px;
+     padding: 4px;
+     position: relative;
+     border: 2px solid #ccc;
+ }
+ 
+ header .header-main .navbar-serch .icon-input {
+     position: absolute;
+     left: 17px;
+     top: 11px;
+     cursor: pointer;
+     background: #ccc;
+     padding: 4px;
+ }
+ 
+ header .header-main .navbar-serch .text-input {
+     position: absolute;
+     left: 50%;
+     top: 14px;
+     color: #ccc;
+     user-select: none;
+ }
