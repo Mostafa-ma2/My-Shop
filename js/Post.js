@@ -82,3 +82,36 @@ function display() {
         continer.classList.remove("container");
     }
 }
+/// Change the kala for Nazar
+var kala = document.getElementById("kala");
+var nazar = document.getElementById("nazar");
+kala.addEventListener("click", function() {
+    Openkala(this);
+});
+nazar.addEventListener("click", function() {
+    Closekala(this);
+});
+
+function Openkala(obj) {
+    var active = "active";
+    nazar.classList.remove(active);
+    obj.classList.add(active);
+    var attr = nazar.getAttribute("attr");
+    var nazars = document.getElementsByClassName(attr)[0];
+    nazars.style.display = "none";
+    var att = obj.getAttribute("attr");
+    var kal = document.getElementsByClassName(att)[0];
+    kal.style.display = "flex";
+}
+
+function Closekala(obj) {
+    var active = "active";
+    kala.classList.remove(active);
+    obj.classList.add(active);
+    var attr = kala.getAttribute("attr");
+    var kalas = document.getElementsByClassName(attr)[0];
+    kalas.style.display = "none";
+    var att = obj.getAttribute("attr");
+    var nazars = document.getElementsByClassName(att)[0];
+    nazars.style.display = "block";
+}
