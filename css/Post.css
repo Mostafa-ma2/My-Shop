@@ -1,0 +1,363 @@
+@font-face {
+    font-family: "name";
+    src: url(fonts/font_Medium.eot) format("eot"), url(fonts/font_Medium.ttf) format("truetype"), url(fonts/font_Medium.woff) format("woff");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "name";
+    direction: rtl;
+    background-color: #dcdcdca3;
+}
+
+.body {
+    background-color: #f1f1f1 !important;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #1a1f59;
+}
+
+a,
+a:hover {
+    transition: all 0.2s ease;
+    text-decoration: none !important;
+}
+
+
+/* ======================================================= Header Top ================================================== */
+
+header .header-top {
+    display: flex;
+}
+
+header .header-top .header-Logo img {
+    width: 100px;
+}
+
+header .header-top .header-login {
+    padding: 32px;
+    text-align: end;
+}
+
+header .header-top .header-login a {
+    padding: 7px;
+}
+
+header .header-top .header-login a:hover {
+    transition: all 0.7s cubic-bezier(0.1, 1.33, 0.46, 1.43);
+    border-bottom: 1px solid green;
+}
+
+
+/* ======================================================= Header Main */
+
+header .header-main {
+    background: #8686f7;
+    padding: 2px;
+}
+
+header .header-main .main-List {
+    display: flex;
+    cursor: context-menu;
+}
+
+header .header-main .main-List .List-name {
+    margin-left: 20px;
+    display: inline-block;
+    height: 27px;
+    margin-top: 11px;
+}
+
+header .header-main #Rmenue {
+    display: none;
+}
+
+header .header-main .main-List .List-name:hover {
+    border-bottom: 2px solid coral;
+    border-radius: 4px;
+}
+
+header .header-main .main-List .List-name .List-Group {
+    display: grid;
+    position: absolute;
+    margin-top: 14px;
+    background-color: #8686f7;
+    padding: 4px;
+    z-index: 1;
+    border-bottom: 2px solid coral;
+}
+
+header .header-main .main-List .List-name .List-Group .Group-item {
+    padding: 8px;
+}
+
+header .header-main .main-List .List-name .List-Group .Group-item-action {
+    padding: 8px;
+    background: #8686f7;
+    border-radius: 7px;
+}
+
+header .header-main .main-List .List-name .List-Group .Group-item:hover {
+    padding: 8px;
+    background: white;
+    border-radius: 3px;
+    transition: all 0.2s cubic-bezier(0.29, 0.42, 0, 1.13);
+}
+
+header .header-main .main-List .List-name .List-Group .Group-item:hover #asli {
+    color: black;
+}
+
+header .header-main .main-List .List-name .List-Group .Group-item-action i {
+    color: gold;
+}
+
+header .header-main .main-List .List-name .List-Group .Group-item-action a {
+    color: ghostwhite;
+}
+
+header .header-main .main-List .List-name .List-Group .item {
+    display: none;
+}
+
+header .header-main .main-List .List-name .List-Group .item-action {
+    position: absolute;
+    display: grid;
+    right: 90px;
+    background: white;
+    top: 0;
+    padding: 9px;
+    border-radius: 5px;
+}
+
+header .header-main .main-List .List-name .List-Group .item-action a {
+    padding: 6px;
+    color: black;
+}
+
+header .header-main .main-List .List-name .List-Group .item-action a:hover {
+    border-bottom: 2px solid gold;
+}
+
+header .header-main .main-List .List-name .List-Group .item-action p {
+    text-align: center;
+}
+
+header .header-main .navbar-serch input {
+    width: 100%;
+    margin-top: 9px;
+    padding: 4px;
+    position: relative;
+    border: 2px solid #ccc;
+}
+
+header .header-main .navbar-serch .icon-input {
+    position: absolute;
+    left: 17px;
+    top: 11px;
+    cursor: pointer;
+    background: #ccc;
+    padding: 4px;
+}
+
+header .header-main .navbar-serch .text-input {
+    position: absolute;
+    left: 50%;
+    top: 14px;
+    color: #ccc;
+    user-select: none;
+}
+
+header .slider {
+    direction: ltr;
+    margin-top: 10px;
+}
+
+
+/* =============================================== Header Main */
+
+main .main-header {
+    margin-top: 33px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 17px 0px black;
+    display: flex;
+}
+
+main .main-header .Post .icon {
+    text-align: center;
+    color: gray;
+}
+
+main .main-header .Post img {
+    width: 100%;
+}
+
+main .main-header .text1 {
+    padding: 10px;
+    border-right: 2px dashed gray;
+}
+
+main .main-header .text1 p {
+    margin-bottom: 7px;
+}
+
+main .main-header .text2 {
+    padding: 10px;
+    border-right: 2px dashed gray;
+}
+
+main .main-header .text2 #next {
+    width: 6%;
+    text-align: end;
+    opacity: 0;
+}
+
+main .main-header .text2 #p {
+    display: initial;
+    padding: 10px;
+    background: green;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+main .main-header .text2 .p:hover #next {
+    opacity: 1;
+    transition: all 0.4s ease;
+}
+
+main .main-header .text2 p {
+    margin-bottom: 7px;
+}
+
+main .main {
+    margin-top: 21px;
+    padding: 7px;
+    background: white;
+    border-radius: 7px;
+    margin-bottom: 21px;
+    display: flex;
+}
+
+main .main .Kharid .input {
+    padding: 10px;
+    background: green;
+    margin-top: 8px;
+    text-align: center;
+    border-radius: 9px;
+    color: white;
+}
+
+main .main .Kharid .input:hover {
+    box-shadow: 0 0 11px 0px black;
+    transition: all 0.4s ease;
+}
+
+main .main .Kharids .input:hover {
+    box-shadow: 0 0 11px 0px black;
+    transition: all 0.4s ease;
+}
+
+main .main .Kharids .input {
+    padding: 10px;
+    background: green;
+    margin-top: 14px;
+    text-align: center;
+    border-radius: 9px;
+    color: white;
+}
+
+main .main .Kharids .input a {
+    color: white;
+    padding: 10px;
+}
+
+main .main .Kharid .input a {
+    color: white;
+    padding: 10px;
+}
+
+main .main .Kharid h1 {
+    color: green;
+    font-size: 21px;
+}
+
+
+/* ========================= Nazarat */
+
+main .fother .input {
+    display: flex;
+}
+
+main .fother .input .active {
+    padding: 11px;
+    background: white;
+    border-radius: 3px;
+    display: inline;
+}
+
+main .fother .input h2 {
+    padding: 11px;
+    background: gainsboro;
+    border-radius: 3px;
+    display: inline;
+    cursor: pointer;
+}
+
+main .fother .Nazar {
+    padding: 25px;
+    background: white;
+    border-radius: 3px;
+    display: flex;
+}
+
+main .fother .Nazar img {
+    width: 100px;
+    border-radius: 50px;
+    height: 95px;
+}
+
+main .fother .Nazar h1 {
+    display: inline;
+    margin-top: 41px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+main .fother .Nazar i {
+    margin-top: 41px;
+    margin-right: 13px;
+}
+
+main .fother .Nazar .text {
+    margin-top: 12px;
+    border: 1px solid;
+    padding: 12px;
+    border-radius: 6px;
+    width: 100%;
+}
+
+
+/* ============================== Media */
+
+@media (max-width: 757px) {
+    header .header-main #Rmenue {
+        display: flex;
+        font-size: 26px;
+        margin-top: 10px;
+    }
+    header .header-main .main-List {
+        display: none;
+    }
+}
