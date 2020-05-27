@@ -115,3 +115,24 @@ function Closekala(obj) {
     var nazars = document.getElementsByClassName(att)[0];
     nazars.style.display = "block";
 }
+/// Image changes
+var circle = document.getElementsByClassName("circle");
+var images = document.getElementsByClassName("images");
+for (var i = 0; i < circle.length; i++) {
+    circle[i].addEventListener("click", function() {
+        changeimg(this);
+    });
+};
+
+function changeimg(obj) {
+    for (var i = 0; i < circle.length; i++) {
+        circle[i].classList.remove("active");
+    };
+    for (var i = 0; i < images.length; i++) {
+        images[i].style.display = "none";
+    }
+    obj.classList.add("active");
+    var attr = obj.getAttribute("attr");
+    var img = document.getElementById(attr);
+    img.style.display = "block";
+}
