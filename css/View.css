@@ -1,0 +1,302 @@
+@font-face {
+    font-family: "name";
+    src: url(fonts/font_Medium.eot) format("eot"), url(fonts/font_Medium.ttf) format("truetype"), url(fonts/font_Medium.woff) format("woff");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "name";
+    direction: rtl;
+    background-color: #dcdcdca3;
+}
+
+.body {
+    background-color: #f1f1f1 !important;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #1a1f59;
+}
+
+a,
+a:hover {
+    transition: all 0.2s ease;
+    text-decoration: none !important;
+}
+
+
+/* ======================================================= Header Top ================================================== */
+
+header .header-top {
+    display: flex;
+}
+
+header .header-top .header-Logo img {
+    width: 100px;
+}
+
+header .header-top .header-login {
+    padding: 32px;
+    text-align: end;
+}
+
+header .header-top .header-login a {
+    padding: 7px;
+}
+
+header .header-top .header-login a:hover {
+    transition: all 0.7s cubic-bezier(0.1, 1.33, 0.46, 1.43);
+    border-bottom: 1px solid green;
+}
+
+
+/* ======================================================= Header Main */
+
+header .header-main {
+    background: #8686f7;
+    padding: 2px;
+}
+
+header .header-main .main-List {
+    display: flex;
+    cursor: context-menu;
+}
+
+header .header-main .main-List .List-name {
+    margin-left: 20px;
+    display: inline-block;
+    height: 27px;
+    margin-top: 11px;
+}
+
+header .header-main #Rmenue {
+    display: none;
+}
+
+header .header-main .main-List .List-name:hover {
+    border-bottom: 2px solid coral;
+    border-radius: 4px;
+}
+
+header .header-main .main-List .List-name .List-Group {
+    display: grid;
+    position: absolute;
+    margin-top: 14px;
+    background-color: #8686f7;
+    padding: 4px;
+    z-index: 1;
+    border-bottom: 2px solid coral;
+}
+
+header .header-main .main-List .List-name .List-Group .Group-item {
+    padding: 8px;
+}
+
+header .header-main .main-List .List-name .List-Group .Group-item-action {
+    padding: 8px;
+    background: #8686f7;
+    border-radius: 7px;
+}
+
+header .header-main .main-List .List-name .List-Group .Group-item:hover {
+    padding: 8px;
+    background: white;
+    border-radius: 3px;
+    transition: all 0.2s cubic-bezier(0.29, 0.42, 0, 1.13);
+}
+
+header .header-main .main-List .List-name .List-Group .Group-item:hover #asli {
+    color: black;
+}
+
+header .header-main .main-List .List-name .List-Group .Group-item-action i {
+    color: gold;
+}
+
+header .header-main .main-List .List-name .List-Group .Group-item-action a {
+    color: ghostwhite;
+}
+
+header .header-main .main-List .List-name .List-Group .item {
+    display: none;
+}
+
+header .header-main .main-List .List-name .List-Group .item-action {
+    position: absolute;
+    display: grid;
+    right: 90px;
+    background: white;
+    top: 0;
+    padding: 9px;
+    border-radius: 5px;
+}
+
+header .header-main .main-List .List-name .List-Group .item-action a {
+    padding: 6px;
+    color: black;
+}
+
+header .header-main .main-List .List-name .List-Group .item-action a:hover {
+    border-bottom: 2px solid gold;
+}
+
+header .header-main .main-List .List-name .List-Group .item-action p {
+    text-align: center;
+}
+
+header .header-main .navbar-serch input {
+    width: 100%;
+    margin-top: 9px;
+    padding: 4px;
+    position: relative;
+    border: 2px solid #ccc;
+}
+
+header .header-main .navbar-serch .icon-input {
+    position: absolute;
+    left: 17px;
+    top: 11px;
+    cursor: pointer;
+    background: #ccc;
+    padding: 4px;
+}
+
+header .header-main .navbar-serch .text-input {
+    position: absolute;
+    left: 50%;
+    top: 14px;
+    color: #ccc;
+    user-select: none;
+}
+
+header .slider {
+    direction: ltr;
+    margin-top: 10px;
+}
+
+
+/* ================================================= Main */
+
+main .Serchs {
+    border-radius: 6px;
+    margin-top: 41px;
+    background: cornsilk;
+    padding: 34px;
+}
+
+main .Serch-model {
+    display: -webkit-inline-box;
+}
+
+main .serch-color {
+    display: -webkit-inline-box;
+    margin-top: 10px;
+}
+
+main .serch-inputs #serch-iput {
+    text-align: center;
+    background: green;
+    color: white;
+    padding: 7px;
+    margin-top: 10px;
+}
+
+main .serch-inputs #serch-iput:hover {
+    box-shadow: 0 0 8px black;
+    border: 1px solid #ccc;
+}
+
+main .Serchs input {
+    width: 95%;
+    padding: 2px;
+    background: whitesmoke;
+    border: 1px solid #ccc;
+    margin-left: 46px;
+}
+
+
+/* ================================== Main tag */
+
+main .tag {
+    margin-top: 15px;
+}
+
+main .tag a {
+    padding: 8px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 28px;
+    margin-left: 3px;
+}
+
+
+/* =========================== post */
+
+main .post-Top {
+    padding: 23px;
+    display: block;
+}
+
+main .post-Top .Post img {
+    width: 100%;
+}
+
+main .post-Top .Post {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 8px black;
+    margin-left: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 23%;
+}
+
+main .post-Top .Post:hover {
+    box-shadow: 0 0 8px green;
+}
+
+main .post-Top .Post span {
+    display: block;
+    text-align: end;
+    font-size: 20px;
+    padding: 7px;
+    color: green;
+    font-style: italic;
+}
+
+main .post-Top .Post p {
+    margin-top: 7px;
+}
+
+main .post-Top .Post .input #ShoppingAdd {
+    background: green;
+    padding: 7px;
+    display: -webkit-inline-box;
+    width: 69%;
+    border-radius: 5px;
+    color: white;
+}
+
+main .post-Top .Post .input #ShoppingAdd:hover {
+    background: crimson;
+}
+
+main .post-Top .Post .input #ShoppingGet {
+    display: -webkit-inline-box;
+    background: green;
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+main .post-Top .Post .input #ShoppingGet:hover {
+    background: crimson;
+}
